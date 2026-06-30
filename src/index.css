@@ -1,7 +1,7 @@
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #ffffff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -30,12 +30,13 @@
   }
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #B7C396;
+    --text: #181b10;
     --text-h: #B7C396;
     --bg: #FEFEFE;
-    --border: #2e303a;
+    --border: #7d808b;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -52,11 +53,13 @@
 
 body {
   margin: 0;
+  background-color: #ffffff;
+  width: 100vw;
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
@@ -64,35 +67,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 600;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
 }
 
 code,
