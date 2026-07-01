@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import NavBar from './components/Navbar.jsx'
 import About from './pages/About.jsx'
 import Research from './pages/Research.jsx'
+import TickID from './pages/identification.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,7 +17,9 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={ <Home />} />
           <Route path="/about" element={ <About />} />
-          <Route path="/researc" element={ <Research />} />
+          <Route path="/research" element={ <Research />} />
+          <Route path="/identification" element={ <TickID />} />
+
         </Routes>
         
     </BrowserRouter>

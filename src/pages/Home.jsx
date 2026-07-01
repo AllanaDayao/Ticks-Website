@@ -44,7 +44,7 @@ function Home() {
             {/* INTROUDCTION */}
 
             <div className = "intro-strip-container">
-                <p> intro words words words</p>
+                <p> intro words words words words words words words words words words words words</p>
             </div> 
 
             <div className = "intro-container">

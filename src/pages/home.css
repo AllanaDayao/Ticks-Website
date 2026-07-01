@@ -23,15 +23,18 @@
 }
 .homepage {
     background-color: #fafaf7;
-    height: 100%;
+    min-height: 100%;
+}
+
+.intro-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .info-card {
     background-color: #ecece9;
     background: var(--card);
-    border: 2px solid var(--border);
-    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+
     padding: 20px;
-    box-shadow: 0 1px 3px rdba (0,0,0,0.001);
     transition: box-shadow 0.2s;
     margin: 20px;
 }
