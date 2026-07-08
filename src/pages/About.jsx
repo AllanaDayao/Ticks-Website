@@ -11,14 +11,28 @@ function About() {
     return(
         <div className = "about-page">
 
-            <div className = "mission-container">
-                <h3> Our Mission</h3>
-                <p> words words words words</p>
+        <div className = "about-mission">
 
+            <h3>About the Lab</h3>
+            <div className = "block">
+                <p> words words words words words words</p>
             </div>
+        
+            <h3>Our Mission</h3>
+            <div className = "block">
+                <p> words words words words words words</p>
+            </div>
+            
+        </div>
+            
+
+
+
 
 
             <div className = "team-container">
+
+            <h3>Meet the Team</h3>
 
              {/*Lists members + brief intros*/}
 

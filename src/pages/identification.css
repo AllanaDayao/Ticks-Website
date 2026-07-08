@@ -1,0 +1,56 @@
+/* The container */
+.flip-box {
+  background-color: transparent;
+  width: 300px; /* Adjust to fit your layout */
+  height: 200px;
+  perspective: 1000px; 
+}
+
+/* The wrapper */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d; 
+}
+
+/* Flip the wrapper along the X axis */
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+/* Common styles for both sides */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: opacity 0.3s ease; /* Smooth transition for the fallback fade */
+}
+
+/* Styling for the Front Side */
+.flip-box-front {
+  background-color: #b5c49c;
+  color: white;
+  transform: rotateX(0deg);
+  z-index: 2;
+  opacity: 1;
+}
+
+/* FAILSAFE: Force the front side to vanish when the box is hovered */
+.flip-box:hover .flip-box-front {
+  opacity: 0;
+}
+
+/* Styling for the Back Side */
+.flip-box-back {
+  background-color: #2e5a36;
+  color: white;
+  transform: rotateX(180deg); 
+  z-index: 1;
+}

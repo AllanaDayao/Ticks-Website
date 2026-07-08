@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
     return(
         <nav  className = "navbar">
-            <h1 className = "logo">Ticks R Us</h1>
+            <h1 className = "logo">Tufts Ecology of Zoonoses Laboratory</h1>
 
             <ul className = "navLinks">
 
