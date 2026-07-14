@@ -55,15 +55,16 @@ body {
   margin: 0;
   background-color: #ffffff;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 #root {
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -87,9 +88,11 @@ code {
 }
 
 
-.html, body, #root {
+html, body, #root {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  width: 100vw;
+  place-items: center;
 
 }

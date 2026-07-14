@@ -1,12 +1,15 @@
 import React from 'react';
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import tufts from '../assets/tufts_logo.jpg'
 
 
 const NavBar = () => {
     return(
         <nav  className = "navbar">
-            <h1 className = "logo">Tufts Ecology of Zoonoses Laboratory</h1>
+
+            <img src = {tufts} alt = "Avatar" className = "img"></img>
+            <h1>Ecology of Zoonoses Laboratory</h1>
 
             <ul className = "navLinks">
 

@@ -1,9 +1,34 @@
+
+
+.title-container {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color:#12692e;
+  width: 80vw;
+  margin: 20px ;
+}
+
+
 /* The container */
+
+.italic {
+  font-style: italic
+}
 .flip-box {
   background-color: transparent;
-  width: 300px; /* Adjust to fit your layout */
-  height: 200px;
+  width: 75vw; 
+  height: 160px;
   perspective: 1000px; 
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin: 10px 20px;
 }
 
 /* The wrapper */
@@ -49,8 +74,17 @@
 
 /* Styling for the Back Side */
 .flip-box-back {
-  background-color: #2e5a36;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(14, 14, 14);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
   transform: rotateX(180deg); 
   z-index: 1;
+}
+
+
+.note{
+  background-color: #fccda4;
+  border-left: 6px solid #f44336;
+  margin: 10px 30px;
 }

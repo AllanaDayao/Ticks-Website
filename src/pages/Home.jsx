@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './home.css';
 
-import img1 from '../assets/ixodes.jpg';
+import img1 from '../assets/PXL_20230525_144157511.jpg';
 import img2 from '../assets/lawn-tick-control.jpg';
 import img3 from '../assets/ticks-close.jpg';
 
