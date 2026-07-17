@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import './home.css';
+import '../styles/home.css';
 
 import img1 from '../assets/PXL_20230525_144157511.jpg';
 import img2 from '../assets/lawn-tick-control.jpg';
 import img3 from '../assets/ticks-close.jpg';
 
 const images = [img1, img2, img3 ];
+
+{/*Array of images and their captions*/}
+const slides = [
+    {
+        image: img1,
+        caption: "Ticks under a microscope"
+    },
+    {
+        image: img2,
+        caption: "wassup"
+    },
+    {
+        image: img3,
+        caption: "hii"
+    }
+];
 
 function Slideshow() {
 
@@ -16,7 +32,7 @@ function Slideshow() {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+            setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
         }, 4000);
 
         return () => clearInterval(timer);
@@ -25,11 +41,16 @@ function Slideshow() {
     return (
 
         <div className = "slideshow-container">
+            {/*The image*/}
             <img
             src = {images[currentIndex]}
             alt = {`Slide ${currentIndex + 1}`}
             />
 
+            {/*the caption*/}
+            <div className = "caption">
+                <p>{slides[currentIndex].caption}</p>
+            </div>
         </div>
     );
 
@@ -44,7 +65,10 @@ function Home() {
             {/* INTROUDCTION */}
 
             <div className = "intro-strip-container">
-                <p> intro words words words words words words words words words words words words</p>
+                <p> Our laboratory studies the epidemiology and ecology of vector-borne infections. Our main focus 
+                    is to try to understand how tick-borne pathogens are perpetuated in nature. We are reexamining current
+                    dogma about deer tick-transmitted infections such as Lyme disease with modern molecular tools
+                    and finding that much of our understanding of the transmission cycles in nature is incomplete.</p>
             </div> 
 
             <div className = "intro-container">

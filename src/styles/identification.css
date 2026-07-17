@@ -5,6 +5,10 @@
   margin-left: 20px;
 }
 
+.title-container h2 {
+  
+}
+
 .line {
   border: none;
   height: 1px;
@@ -21,8 +25,8 @@
 }
 .flip-box {
   background-color: transparent;
-  width: 75vw; 
-  height: 160px;
+  width: 60vw; 
+  height: 110px;
   perspective: 1000px; 
 
   display:flex;
@@ -60,7 +64,7 @@
 
 /* Styling for the Front Side */
 .flip-box-front {
-  background-color: #b5c49c;
+  background-color: #9cc49f;
   color: white;
   transform: rotateX(0deg);
   z-index: 2;
@@ -74,7 +78,7 @@
 
 /* Styling for the Back Side */
 .flip-box-back {
-  background-color: #ffffff;
+  background-color: #effff1;
   color: rgb(14, 14, 14);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 

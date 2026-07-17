@@ -1,5 +1,5 @@
 import React from 'react';
-import './identification.css';
+import '../styles/identification.css';
 
 
 

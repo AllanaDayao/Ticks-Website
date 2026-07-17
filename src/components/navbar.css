@@ -14,7 +14,7 @@
 
 .navbar h1 {
     color:#FEFEFE;
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: -2px -2px 0px #5d9bf9;
     margin: 0;
 }
@@ -31,24 +31,34 @@
 .navLinks {
     list-style-type: none;
     display: flex;
-    gap: 4rem;
-    margin: 20px;
+    height: 40px;
+
+    gap: 3rem;
+    margin: 10px;
     padding: 0;
 
 }
 
 .navbar .navLinks  li{
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
     margin-left: 0.5rem;
     font-family: "Lora", serif;
-    border-radius: 10px;
+
+    border-radius: 2px;
+
     border-color:#B7C396;
+}
+.navbar .navLinks li:hover {
+    background-color: #49a065;
+    height:50px;
+    width: auto;
+
 }
 
 .navbar .navLinks  a{
     color:#FEFEFE;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
